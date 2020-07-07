@@ -1,17 +1,129 @@
-/* moble first ------ */
-/* base ------- */
+
+/* --- base --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "futura";
+}
+
+img{
+  width: 100%;
+}
+/* --- layout --- */
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px ;
+}
+.hero-section{
+  background-image: url(/images/hero-bg-texture.png);
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  margin: 20px;
+  margin-bottom: 300px;
+}
 
 
-/* layout ------- */
 
 
 
-/* blocks ----- */
+/* --- block --- */
 
+/* ------ header ------ */
+.header_logo_wrapper {
+  width: 40%;
+  height: 75px;
+  padding: .5em;
+  display: flex;
+  align-items: center;
+}
 
+.header_logo {
+  width: 100%;
+}
 
-/* desktop ----- */
-
-@media (min-width: 550px) {
+.header_nav {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 12%;
+  display: none;
+}
+.header-nav_list {
+  list-style: none;
+}
+.header_ham-menu {
+width: 50px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+position: relative;
+left: 10%;
 
 }
+.bar{
+  display: inline-block;
+  height: 2px;
+  margin-top: 5px;
+  background-color:#AB00FF ;
+border-radius: 10%;
+
+}
+.bar-1 {
+ width: 36.5px;
+}
+.bar-2 {
+ width: 28px;
+ position: relative;
+ left: 5px;
+}
+/* ------ hearo-section -----  */
+.hero-section_title { 
+/* width: 250px; */
+
+font-size: 14px;
+}
+.hero-section_card_wrapper{
+  width: 75%;
+  position: relative;
+  bottom: 100px;
+  left: 20px;
+
+}
+.hero-section_card {
+  width: 100%;
+}
+/* ----- feature section -----  */
+.section-features_title {
+  color:#7700ff ;
+font-size: 18px;
+text-align: center;
+margin: 25px;
+}
+.section-features_card {
+  border: 1px dotted teal;
+  width: 75%;
+  margin-bottom: 20px;
+}
+  
+.section-features_card_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+.section-feature_card_image {
+width: 5%;
+position: relative;
+left: 230px;
+bottom: 10px
+}
+
+/* ---- desktop ----  */
+
+/*# sourceMappingURL=style.css.map */
