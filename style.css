@@ -13,39 +13,52 @@ body {
 img{
   width: 100%;
 }
-/* --- layout --- */
+footer {
+  background: linear-gradient(229.93deg, #AB00FF -21.91%, #007BFF 133.89%);
+}
+  li {
+    list-style: none;
+  }
+/* --- layout ---------------------------------- */
 .header {
   display: flex;
   justify-content: space-around;
   margin-bottom: 60px ;
 }
 .hero-section{
-  background-image: url(/images/hero-bg-texture.png);
-  background-repeat: no-repeat;
-  background-clip: border-box;
-  margin: 20px;
-  margin-bottom: 300px;
+  margin-bottom: 200px;
+}
+
+.section-features_card_dashboard {
+  position: relative;
+width: 345px;
+height: 245px;
+left: 15px;
+margin-bottom:200px ;
+
+}
+.hero-section_title, .section-features_title, .product-section_title {
+  margin: 15px;;
 }
 
 
 
-
-
-/* --- block --- */
+/* --- block ---------------------------------- */
 
 /* ------ header ------ */
+
+
+
+
 .header_logo_wrapper {
-  width: 40%;
-  height: 75px;
-  padding: .5em;
+  width: 45%;
   display: flex;
   align-items: center;
+  position: relative;
+  right: 20px;
+  top: 5px;
 }
-
-.header_logo {
-  width: 100%;
-}
-
+/* ----- nav ------ */
 .header_nav {
   display: flex;
   flex-direction: column;
@@ -90,9 +103,8 @@ font-size: 14px;
 .hero-section_card_wrapper{
   width: 75%;
   position: relative;
-  bottom: 100px;
-  left: 20px;
-
+  bottom: 120px;
+  left: 40px
 }
 .hero-section_card {
   width: 100%;
@@ -101,13 +113,16 @@ font-size: 14px;
 .section-features_title {
   color:#7700ff ;
 font-size: 18px;
-text-align: center;
-margin: 25px;
-}
+margin-bottom: 80px;}
+
 .section-features_card {
-  border: 1px dotted teal;
-  width: 75%;
+  width: 90%;
+  font-size: 17px;
   margin-bottom: 20px;
+  border-radius: 7px;
+  box-shadow:1px 1px 15px rgba(0,0,0,0.15);
+ 
+  
 }
   
 .section-features_card_wrapper {
@@ -120,10 +135,95 @@ margin: 25px;
 .section-feature_card_image {
 width: 5%;
 position: relative;
-left: 230px;
-bottom: 10px
+left: 290px;
+bottom: 25px;
+}
+.section-features-card_message{
+  width: 220px;
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+/* ----- product section ----- */
+.product-section_title {
+  margin-bottom: 65px;
+}
+.product-section_card_wrapper{
+  width: 30%;
+ display: flex;
+ flex-direction: row;
+flex-wrap: wrap;
+margin-bottom: 100px;
+}
+.trello, .jira {
+  position: relative;
+  left: 230px;
+  bottom: 40px
+}
+.slack, .google {
+  position: relative;
+  left: 20px;
+}
+.google {
+  position: relative;
+  bottom: 120px;
+}
+.jira {
+  position: relative;
+  /* left: 200px; */
+  bottom: 80px;
 }
 
-/* ---- desktop ----  */
+.asana {
+  position: relative;
+  top: 110px;
+  left: 120px
+}
+/* ----- footer ------- */
+.footer-section {
+  color: white;
+  padding: 30px;
+  
+}
+.footer-section h3 {
+  text-align: center;
+  margin:0px,20px;
+}
+.footer-section_form {
+  margin: 25px 10px 200px;
+}
+.footer-section_email{
+  width: 55%;
+  height: 23px;
+    background-color: #fff;
+  mix-blend-mode: normal;
+  opacity: .4;
+  border-radius: 30px;
+}
+  
+.footer-section_button{
+  color: #7700ff;
+  font-size: 12px;
+  background-color: #fff;
+  border-radius: 34px;
+  padding: 5px;
 
-/*# sourceMappingURL=style.css.map */
+}
+.footer-section_nav {
+text-align: end;
+text-transform: uppercase;
+display: flex;
+flex-flow: row;
+justify-content: flex-end;
+align-content: space-between;
+}
+
+  
+
+/* ---- desktop ----  */
+@media (min-width: 750px){
+  /* ----- layout -------- */
+  
+  /* ----- blocks -------- */
+
+}

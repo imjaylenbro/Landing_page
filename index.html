@@ -53,13 +53,17 @@
 
         <!--- features section -->
         <section class="section-features">
-        <h2 class="section-features_title">The features that matter</h2>
+            <div class="section-features_title">
+                <h2 >The features that matter</h2>   
+            </div>
         <div class="section-features_card_wrapper">
             
             
             <!---first card ------->
             <div class="section-features_card">
-                <p> Mark all your completed threads in one place</p>
+                <div class="section-features-card_message">
+                    <p> Mark all your completed threads in once place</p>
+                </div>            
                 <div class="section-feature_card_image">
                     <img src="./images/features-checkboxes.png" alt="">
                 </div>
@@ -67,7 +71,9 @@
 
             <!-----second card ------>
             <div class="section-features_card">
-                <p> Intergrate all your communication platforms</p>
+                <div class="section-features-card_message">
+                    <p> integrate all your communication platforms</p>
+                </div>
                 <div class="section-feature_card_image">
                     <img src="./images/features-integrations.png" alt="">
                 </div>
@@ -75,7 +81,9 @@
 
             <!--- third card ------->
             <div class="section-features_card">
-                <p> See all your notifications in one place</p>
+                <div class="section-features-card_message">
+                    <p> See all your notifications in one place</p>
+                </div>
                 <div class="section-feature_card_image">
                     <img src="./images/features-notifications.png" alt="">
                 </div>
@@ -83,33 +91,35 @@
 
         </div> 
         <!--- dashboard-secton ----->
-        <div class="section-features_card_dashboard">
+            <div class="section-features_card_dashboard">
             <img src="./images/zenith-dasboard.png" alt="dashboard">
         </div>
         </section>
         <!--- product section -------->
         <section class="product-section">
-            <h2>Your favoirte products finally together</h2>
-            <div class="product-section_card_wrapper">
+            <div class="product-section_title">
+                <h2>Your favoirte products finally together</h2>
+            </div>
+            <div class="product-section_card_wrapper ">
                 <!-- slack card -->
-                <div class="product-section_card">
+                <div class="product-section_card slack">
                     <img src="./images/slack-full.png" alt="">
                 </div>
 
                 <!-- trello ----->
-                <div class="product-section_card">
+                <div class="product-section_card trello">
                     <img src="./images/trello.png" alt="">
                 </div>
                 <!-- asana ------>
-                <div class="product-section_card">
+                <div class="product-section_card asana">
                     <img src="./images/asana.png" alt="">
                 </div>
                 <!-- jira ------->
-                <div class="product-section_card">
+                <div class="product-section_card jira">
                     <img src="./images/jira.png" alt="">
                 </div>
                 <!-- google ------>
-                <div class="product-section_card">
+                <div class="product-section_card google">
                     <img src="./images/google.png" alt="">
                 </div>
 
@@ -119,15 +129,15 @@
         <footer class="footer-section">
             <h3>stay up to date</h3>
             <form action="" class="footer-section_form">
-                <input type="text" name="name" id="" placeholder="Name">
-                <input type="submit">
+                <input class="footer-section_email" type="email" name="email" id="" placeholder="email">
+                <button class="footer-section_button" >download</button>
             </form>
             <nav class="footer-section_nav">
                 <ul class="footer-section-nav_list">
-                    <li>Contact</li>
-                    <li>Our Team</li>
-                    <li>Policies</li>
-                    <li>Privacy & Terms</li>
+                    <li> <a href="#">Contact</a> </li>
+                    <li> <a href="#">Our Team</a> </li>
+                    <li> <a href="#">Policies</a> </li>
+                    <li> <a href="#">Privacy & Terms</a> </li>
                 </ul>
 
             </nav>
